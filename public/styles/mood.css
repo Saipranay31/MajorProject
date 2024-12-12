@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef5e6;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d5f2e;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Box Styles */
+.mood-picker-box,
+.mood-history-box {
+  border: 1px solid #b2d8b2;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #f8fff8;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d5f2e;
+  margin-bottom: 1rem;
+}
+
+/* Emotions */
+.emotions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.emotion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emotion-button {
+  background: #dff0d8;
+  border: 2px solid #b2d8b2;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 90px;
+  height: 90px; /* Fixed height */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emotion-button:hover,
+.emotion-button.selected {
+  background: #8bc34a;
+  color: #fff;
+  border-color: #6fa234;
+}
+
+.emotion-image {
+  max-width: 60%;  /* Ensure image size stays within button */
+  max-height: 60%; /* Ensure image size stays within button */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.emotion-label {
+  margin-top: 0.5rem; /* Space between image and label */
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  resize: none;
+  font-size: 0.9rem;
+}
+
+/* Save Button */
+.save-entry {
+  background: #8bc34a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.save-entry:hover {
+  background: #6fa234;
+}
+
+/* Mood History */
+.mood-history-box {
+  overflow-y: auto; /* Prevents overflow if the content exceeds box height */
+  max-height: 400px; /* Optional: restrict box height */
+}
+
+.mood-entry {
+  display: flex;
+  align-items: center;
+  border: 1px solid #b2d8b2;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9fff9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+.mood-entry .emoji {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  max-width: 80px; /* Limit emoji size */
+  max-height: 80px; /* Limit emoji size */
+  overflow: hidden; /* Ensure image stays within bounds */
+}
+
+.mood-entry .emotion-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+
+.note {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.4;
+}
