@@ -18,6 +18,11 @@ export default function Home() {
               Go to Storytelling
             </Link>
           </li>
+          <li style={{ margin: "1rem 0" }}>
+            <Link href="/activity1" style={{ fontSize: "1.2rem", color: "blue", textDecoration: "underline" }}>
+              go to activity
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

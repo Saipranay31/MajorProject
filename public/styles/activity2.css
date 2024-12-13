@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8e3; /* Light greenish background */
+    color: #3a4a3a;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #5d6e5d;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #6d7e6d;
+  }
+  
+  /* Box Container */
+  .box-container {
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  margin-bottom: 20px; /* Add spacing between sections if needed */
+}
+  
+  
+  /* Relaxing Sounds */
+  .sound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .sound-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8f5db;
+    border: 1px solid #cfe1c1;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sound-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cover-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .sound-details {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+  
+  .play-button {
+    background-color: #6a8f6a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    background-color: #5b7e5b;
+  }
+  
+  /* Pop-Up Content */
+  /* Pop-Up Content */
+/* Pop-Up Content */
+.popup-content {
+    position: fixed; /* Fix position to center on screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    background-color: #fff; /* White background */
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Set max width */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    z-index: 10000; /* Ensure it appears on top of all elements */
+  }
+  
+  /* Video in Popup */
+  .popup-video {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  /* Close Button Styling */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10001; /* Ensure close button is on top of everything */
+  }
+  
+  .close-button:hover {
+    background-color: #c9302c;
+  }
+  
+  
+  
+  /* Games Section */
+  .games-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  .game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8f5db;
+    border: 1px solid #cfe1c1;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game-card .cover-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .game-card span {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
